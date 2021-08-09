@@ -20,7 +20,7 @@
       "@store/*": ["src/store/*"],
       "@store": ["src/store"],
       "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"],
+      "@styles/*": ["src/styles/*"],
       "@test/*": ["test/*"],
       "@test": ["test"] 
     }
