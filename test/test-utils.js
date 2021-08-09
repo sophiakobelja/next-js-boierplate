@@ -1,7 +1,7 @@
 // test-utils.js
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from 'src/store';
+import { store } from '@store';
 
 // Add in any providers here if necessary:
 // (ReduxProvider, ThemeProvider, etc)

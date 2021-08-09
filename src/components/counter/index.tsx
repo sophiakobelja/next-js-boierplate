@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from 'src/store';
-import { setCount } from 'src/store/slices';
+import { useAppDispatch, useAppSelector } from '@store';
+import { setCount } from '@store/slices';
 import styles from './Counter.module.css';
 
 export const Counter: React.FC = () => {
