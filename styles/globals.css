@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* define variables here  */
+body {
+  --primary-text-color: black;
+  --primary-button-color: #0070f3;
+}

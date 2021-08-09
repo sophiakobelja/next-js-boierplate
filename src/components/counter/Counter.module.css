@@ -1,0 +1,33 @@
+.counter {
+  /* w-100 flex flex-column items-center justify-center */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: stretch;
+}
+.buttonRow button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 15%;
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttonRow button:first-child {
+  background-color: #ff725c;
+}
+
+.buttonRow button:nth-child(2) {
+  background-color: #19a974;
+}
+
+.h2 {
+  font-size: 2.25rem;
+}

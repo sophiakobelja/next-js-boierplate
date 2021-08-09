@@ -6,17 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "@types/react-redux": "^7.1.18",
+    "husky": "^7.0.1",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "@types/react": "17.0.16",
+    "babel-jest": "^27.0.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
+    "jest": "^27.0.6",
+    "jest-css-modules": "^2.1.0",
+    "ts-jest": "^27.0.4",
     "typescript": "4.3.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint -- --quiet --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
